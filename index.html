@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrei Tim — Games</title>
+<style>
+  :root{ --bg:#0e1418; --card:#161f25; --line:#2a3b46; --ink:#e7eef2; --muted:#9fb0bb; --accent:#f0c419; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.55;
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:64px 20px 80px}
+  header{margin-bottom:36px}
+  h1{font-size:2rem;margin:0 0 6px}
+  .tagline{color:var(--muted);margin:0}
+  h2{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+     margin:36px 0 14px;font-weight:700}
+  .game{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);
+        border-radius:14px;padding:16px 18px;margin:12px 0;text-decoration:none;color:inherit}
+  .game:hover{border-color:var(--accent)}
+  .game .ico{width:56px;height:56px;border-radius:12px;flex:0 0 auto;
+             background:linear-gradient(135deg,#1d3a66,#7a2320);display:grid;place-items:center;
+             font-weight:800;color:#fff;font-size:1.1rem}
+  .game .meta{flex:1}
+  .game .name{font-weight:700;font-size:1.1rem}
+  .game .sub{color:var(--muted);font-size:.9rem}
+  .links a{color:var(--accent);text-decoration:none;font-size:.85rem;margin-left:14px;white-space:nowrap}
+  footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- Edit this to your studio name / tagline. -->
+      <h1>Andrei Tim</h1>
+      <p class="tagline">Small games for mobile.</p>
+    </header>
+
+    <h2>Games</h2>
+
+    <a class="game" href="bug-wars/privacy.html">
+      <div class="ico">BW</div>
+      <div class="meta">
+        <div class="name">Bug Wars</div>
+        <div class="sub">A turn-based card duel between bug colonies.</div>
+      </div>
+      <div class="links"><a href="bug-wars/privacy.html">Privacy</a></div>
+    </a>
+
+    <!-- Add future games by copying the block above and pointing it at e.g. castle-wars/privacy.html -->
+
+    <footer>© Andrei Tim. Contact: <a href="mailto:YOUR_CONTACT_EMAIL@example.com" style="color:var(--accent)">YOUR_CONTACT_EMAIL@example.com</a></footer>
+  </div>
+</body>
+</html>
